@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .centralizar {
+            text-align: center;
+        }
+
+        .direita {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 60px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="centralizar">1</td>
+                <td>São Paulo</td>
+                <td class="direita">45.919.049</td>
+            </tr>
+            <tr>
+                <td class="centralizar">2</td>
+                <td>Minas Gerais</td>
+                <td class="direita">21.168.791</td>
+            </tr>
+            <tr>
+                <td class="centralizar">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="direita">17.366.189</td>
+            </tr>
+            <tr>
+                <td class="centralizar">4</td>
+                <td>Bahia</td>
+                <td class="direita">14.930.634</td>
+            </tr>
+            <tr>
+                <td class="centralizar">5</td>
+                <td>Paraná</td>
+                <td class="direita" >11.597.484</td>
+            </tr>
+            <tr>
+                <td class="centralizar">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="direita">11.422.973</td>
+            </tr>
+            <tr>
+                <td class="centralizar">7</td>
+                <td>Pernambuco</td>
+                <td class="direita" >9.616.621</td>
+            </tr>
+            <tr>
+                <td class="centralizar">8</td>
+                <td>Ceará</td>
+                <td class="direita">9.240.580</td>
+            </tr>
+            <tr>
+                <td class="centralizar">9</td>
+                <td>Pará</td>
+                <td class="direita">8.690.745</td>
+            </tr>
+            <tr>
+                <td class="centralizar">10</td>
+                <td>Santa Catarina</td>
+                <td class="direita">7.252.502</td>
+            </tr>
+            <tr>
+                <td class="centralizar">11</td>
+                <td>Maranhão</td>
+                <td class="direita" >7.075.181</td>
+            </tr>
+            <tr>
+                <td class="centralizar">12</td>
+                <td>Goiás</td>
+                <td class="direita">7.075.181</td>
+            </tr>
+            <tr>
+                <td class="centralizar">13</td>
+                <td>Amazonas</td>
+                <td class="direita">4.269.995</td>
+            </tr>
+            <tr>
+                <td class="centralizar">14</td>
+                <td>Espírito Santo</td>
+                <td class="direita">3.514.952</td>
+            </tr>
+            <tr>
+                <td class="centralizar">15</td>
+                <td>Paraíba</td>
+                <td class="direita">3.256.117</td>
+            </tr>
+            <tr>
+                <td class="centralizar">16</td>
+                <td>Rio Grande do Norte</td>
+                <td class="direita">3.534.165</td>
+            </tr>
+            <tr>
+                <td class="centralizar">17</td>
+                <td>Mato Grosso</td>
+                <td class="direita">3.487.321</td>
+            </tr>
+            <tr>
+                <td class="centralizar">18</td>
+                <td>Alagoas</td>
+                <td class="direita">3.333.231</td>
+            </tr>
+            <tr>
+                <td class="centralizar">19</td>
+                <td>Piauí</td>
+                <td class="direita">3.281.480</td>
+            </tr>
+            <tr>
+                <td class="centralizar">20</td>
+                <td>Distrito Federal</td>
+                <td class="direita">3.055.149</td>
+            </tr>
+            <tr>
+                <td class="centralizar">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="direita">2.809.394</td>
+            </tr>
+            <tr>
+                <td class="centralizar">22</td>
+                <td>Sergipe</td>
+                <td class="direita">2.318.822</td>
+            </tr>
+            <tr>
+                <td class="centralizar">23</td>
+                <td>Rondônia</td>
+                <td class="direita">1.777.228</td>
+            </tr>
+            <tr>
+                <td class="centralizar">24</td>
+                <td>Tocantins</td>
+                <td class="direita">1.590.248</td>
+            </tr>
+            <tr>
+                <td class="centralizar">25</td>
+                <td>Acre</td>
+                <td class="direita">906.876</td>
+            </tr>
+            <tr>
+                <td class="centralizar">26</td>
+                <td>Amapá</td>
+                <td class="direita">861.773</td>
+            </tr>
+            <tr>
+                <td class="centralizar">27</td>
+                <td>Roraima</td>
+                <td class="direita">631.181</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="centralizar">-</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="direita"><strong>213.317.639</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
